@@ -361,7 +361,7 @@ def main():
         supports_check_mode=True)
 
     global PKGIN_PATH
-    PKGIN_PATH = module.get_bin_path('pkgin', True, ['/opt/local/bin'])
+    PKGIN_PATH = module.get_bin_path('pkgin', True, ['/opt/local/bin','/opt/tools/bin'])
 
     module.run_command_environ_update = dict(LANG='C', LC_ALL='C', LC_MESSAGES='C', LC_CTYPE='C')
 
